@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: email-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  mail:
+    host: live.smtp.mailtrap.io
+    port: 587
+    username: api
+    password: 454e7996af4b27f76daa70535acb6ee8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
