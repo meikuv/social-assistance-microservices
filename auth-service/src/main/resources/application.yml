@@ -9,3 +9,7 @@ app:
   jwtExpirationMs: 86400000
   jwtRefreshExpirationMs: 86400000
   emailServiceURI: http://localhost:8070/api/v1/email
+aws:
+  access.key: ${AWS_ACCESS_KEY:AKIAYS2NWIUJHSNDY574}
+  secret.key: ${AWS_SECRET_KEY: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}
+  s3.bucket: ${AWS_S3_BUCKET:social-assistance-bucket}

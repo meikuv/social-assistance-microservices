@@ -1,6 +1,5 @@
 package meikuv.xyz.authservice.service.impl;
 
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import meikuv.xyz.authservice.config.jwt.JWTUtils;
 import meikuv.xyz.authservice.exception.HttpException;
@@ -11,6 +10,7 @@ import meikuv.xyz.authservice.service.IUserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
 import java.util.Optional;

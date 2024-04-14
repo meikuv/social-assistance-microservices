@@ -28,7 +28,7 @@ public class EmailServiceImpl implements IEmailService {
         try {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, "utf-8");
-            String htmlTemplate = fileUtils.readFile("/home/meikuv/IdeaProjects/chat-app/src/main/resources/templates/verification_code.html");
+            String htmlTemplate = fileUtils.readFile("/home/meikuv/Documents/backend/social-assistance-microservices/email-service/src/main/resources/templates/verification_code.html");
             String htmlContent = htmlTemplate.replace("${username}", verification.getUsername());
             htmlContent = htmlContent.replace("${code}", verification.getCode());
 

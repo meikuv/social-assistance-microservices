@@ -29,6 +29,7 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
+    private String phoneNumber;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
@@ -40,6 +41,14 @@ public class User {
 
     private Boolean isEnabled;
     private Boolean isLocked;
+
+    public void update(UserDTO userDTO) {
+        this.username = userDTO.getUsername();
+        this.email = userDTO.getEmail();
+        this.firstName = userDTO.getFirstName();
+        this.lastName = userDTO.getLastName();
+        this.phoneNumber = userDTO.getPhoneNumber();
+    }
 
     public UserDTO toDto() {
         return new ModelMapper().map(this, UserDTO.class);

@@ -51,7 +51,6 @@ public class JWTUtils {
         String header = request.getHeader("Authorization");
 
         if (StringUtils.hasText(header) && header.startsWith("Bearer ")) {
-            System.out.println(header.substring(7));
             return header.substring(7);
         }
 

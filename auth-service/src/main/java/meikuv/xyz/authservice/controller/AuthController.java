@@ -49,7 +49,7 @@ public class AuthController {
         User user = userService.getUserByUsername(request.getUsername());
 
         if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
-            throw new HttpException(HttpStatus.UNAUTHORIZED, "Wrong username or password");
+            throw new HttpException(HttpStatus.UNAUTHORIZED, "Неправильный логин или пароль");
         }
 
         Authentication authentication = authenticationManager.authenticate(
@@ -106,6 +106,6 @@ public class AuthController {
         userService.enableUser(request.getEmail());
 
         return ResponseEntity.status(HttpStatus.OK)
-                .body(new MessageResponse("Verified successfully"));
+                .body(new MessageResponse("Успешно прошли верификацию"));
     }
 }
