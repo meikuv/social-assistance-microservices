@@ -5,34 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="663a7cb1-b3e4-4045-8990-d965113cdb3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/payload/request/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IS3Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/templates/verification_code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1487dbeb-9275-49fe-acfe-41159ed60b28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1487dbeb-9275-49fe-acfe-41159ed60b28/storage_v2/_src_/database/assistance-db.M-OnYg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1487dbeb-9275-49fe-acfe-41159ed60b28/storage_v2/_src_/database/assistance-db.M-OnYg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application-local.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/config/jwt/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/config/jwt/JWTUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/RefreshTokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/RefreshTokenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/VerificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/VerificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/config/s3/S3Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/config/s3/S3Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/api-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/api-gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/email-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/email-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-service/src/main/java/meikuv/xyz/emailservice/service/impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-service/src/main/java/meikuv/xyz/emailservice/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/social-assistance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/social-assistance.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +184,7 @@
       <workItem from="1712920721996" duration="1669000" />
       <workItem from="1713025005547" duration="81000" />
       <workItem from="1713025128466" duration="99000" />
-      <workItem from="1713095534004" duration="2395000" />
+      <workItem from="1713095534004" duration="2828000" />
     </task>
     <servers />
   </component>
