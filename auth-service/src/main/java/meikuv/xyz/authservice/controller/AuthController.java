@@ -9,6 +9,7 @@ import meikuv.xyz.authservice.model.RefreshToken;
 import meikuv.xyz.authservice.model.User;
 import meikuv.xyz.authservice.model.Verification;
 import meikuv.xyz.authservice.payload.request.LoginRequest;
+import meikuv.xyz.authservice.payload.request.RefreshTokenRequest;
 import meikuv.xyz.authservice.payload.request.RegisterRequest;
 import meikuv.xyz.authservice.payload.request.VerificationRequest;
 import meikuv.xyz.authservice.payload.response.AuthResponse;
@@ -86,8 +87,6 @@ public class AuthController {
         VerificationDTO verificationDTO = verificationService.createVerification(
                 code, request.getEmail(), request.getUsername());
         emailService.sendCode(jwt, verificationDTO);
-
-
         userService.createUser(request);
 
         return ResponseEntity.status(HttpStatus.OK).body(
@@ -107,5 +106,24 @@ public class AuthController {
 
         return ResponseEntity.status(HttpStatus.OK)
                 .body(new MessageResponse("Успешно прошли верификацию"));
+    }
+
+    @PostMapping("/refresh-token")
+    public ResponseEntity<AuthResponse> refreshToken(@RequestBody RefreshTokenRequest request) {
+        String token = request.getRefreshToken();
+
+        return refreshTokenService.findByToken(token)
+                .map(refreshTokenService::verifyExpiration)
+                .map(RefreshToken::getUser)
+                .map(user -> {
+                    String newToken = jwtUtils.generateJwtFromUsername(user.getUsername());
+                    return ResponseEntity.status(HttpStatus.OK).body(
+                            AuthResponse.builder()
+                                    .accessToken(newToken)
+                                    .refreshToken(request.getRefreshToken())
+                                    .message("Успешно вошли в систему")
+                                    .build()
+                    );
+                }).orElseThrow(() -> new HttpException(HttpStatus.UNAUTHORIZED, request.getRefreshToken()));
     }
 }

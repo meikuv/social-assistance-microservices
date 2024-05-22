@@ -25,4 +25,6 @@ public interface IUserService {
     void deleteUserById(Long id);
 
     void createUser(RegisterRequest request);
+
+    void save(User user);
 }

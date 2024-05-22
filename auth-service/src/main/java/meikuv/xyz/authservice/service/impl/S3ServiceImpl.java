@@ -3,7 +3,6 @@ package meikuv.xyz.authservice.service.impl;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.amazonaws.services.s3.model.S3Object;
 import lombok.RequiredArgsConstructor;
 import meikuv.xyz.authservice.service.IS3Service;
 import org.slf4j.Logger;
@@ -12,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
+import java.net.URL;
 
 @Service
 @RequiredArgsConstructor
@@ -35,8 +35,9 @@ public class S3ServiceImpl implements IS3Service {
     }
 
     @Override
-    public S3Object getFile(String keyName) {
-        return s3Client.getObject(bucketName, keyName);
+    public String getFile(String keyName) {
+        URL url = s3Client.getUrl(bucketName, keyName);
+        return url.toExternalForm();
     }
 
     @Override

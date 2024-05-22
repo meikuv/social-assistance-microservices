@@ -10,11 +10,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "cx_assistance_phone_numbers")
-public class AssistancePhoneNumbers {
+@Entity(name = "cx_locations")
+@Table
+public class Locations {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String phoneNumber;
+    private String name;
+    private String location;
+    private String email;
+    private String phone;
 }

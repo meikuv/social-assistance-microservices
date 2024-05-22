@@ -30,6 +30,8 @@ public class User {
     private String firstName;
     private String lastName;
     private String phoneNumber;
+    private String photoName;
+    private String photoUrl;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(

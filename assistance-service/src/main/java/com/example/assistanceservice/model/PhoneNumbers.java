@@ -1,6 +1,9 @@
 package com.example.assistanceservice.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,13 +13,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table
-@Entity(name = "cx_assistance_locations")
-public class AssistanceLocation {
+@Entity(name = "cx_phone_numbers")
+public class PhoneNumbers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String location;
-    private double longitude;
-    private double latitude;
+    private String personName;
+    private String phoneNumber;
 }

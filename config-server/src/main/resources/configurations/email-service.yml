@@ -15,7 +15,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/assistance-db
     username: meikuv
-    password: miko0147896523
+    password: Miko0147896523
   jpa:
     open-in-view: false
     generate-ddl: true

@@ -114,4 +114,10 @@ public class UserServiceImpl implements IUserService {
                 .build();
         userRepository.save(user);
     }
+
+    @Override
+    @Transactional
+    public void save(User user) {
+        userRepository.save(user);
+    }
 }
