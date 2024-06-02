@@ -5,86 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="663a7cb1-b3e4-4045-8990-d965113cdb3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/config/s3/S3Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/CharityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/HelpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/LawController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/LawyerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/MapLocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/VolunteerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/CanHelpDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/CharityDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/LawDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/LawyerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/MapLocationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/NeedHelpDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/VolunteerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/CanHelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Charity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Law.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/LawArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/LawArticleDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Lawyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/MapLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/NeedHelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/PhoneNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Requisite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Volunteer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/CanHelpRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/CharityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/LawRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/LawyerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/MapLocationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/NeedHelpRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/VolunteerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/ICanHelpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/ICharityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/ILawService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/ILawyerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/IMapLocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/INeedHelpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/IS3Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/IVolunteerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/CanHelpServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/CharityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/LawServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/LawyerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/MapLocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/NeedHelpServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/S3ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/VolunteerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/model/Video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/payload/request/RefreshTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/MedicalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/MedicalDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/ReviewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Medical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/MedicalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/IMedicalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/IReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/MedicalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/ReviewServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ce287fd-569b-4b93-849b-9480175c2214.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1ce287fd-569b-4b93-849b-9480175c2214.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ce287fd-569b-4b93-849b-9480175c2214/storage_v2/_src_/database/assistance-db.M-OnYg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1ce287fd-569b-4b93-849b-9480175c2214/storage_v2/_src_/database/assistance-db.M-OnYg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/AssistanceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/dto/AssistanceDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Assistance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/AssistanceLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Locations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/AssistancePhoneNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/payload/response/MessageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/payload/response/MessageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/repository/AssistanceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/IAssistanceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/service/impl/AssistanceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/HelpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/controller/HelpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/CanHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/CanHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/NeedHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/java/com/example/assistanceservice/model/NeedHelp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assistance-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/assistance-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/config/s3/S3Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/config/s3/S3Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IS3Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IS3Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/S3ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/S3ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/meikuv/xyz/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application-local.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/assistance-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/assistance-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/email-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/email-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-service/src/main/java/meikuv/xyz/emailservice/service/impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-service/src/main/java/meikuv/xyz/emailservice/service/impl/EmailServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,8 +162,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -310,7 +251,16 @@
       <workItem from="1715941968939" duration="1312000" />
       <workItem from="1716125940438" duration="6860000" />
       <workItem from="1716265871262" duration="848000" />
-      <workItem from="1716370839185" duration="5885000" />
+      <workItem from="1716370839185" duration="6649000" />
+      <workItem from="1716401686800" duration="6422000" />
+      <workItem from="1716459354628" duration="4406000" />
+      <workItem from="1716523132079" duration="3365000" />
+      <workItem from="1716783316242" duration="6157000" />
+      <workItem from="1716806195369" duration="2178000" />
+      <workItem from="1716818759456" duration="3879000" />
+      <workItem from="1717058898144" duration="120000" />
+      <workItem from="1717197568220" duration="2632000" />
+      <workItem from="1717294640880" duration="2813000" />
     </task>
     <servers />
   </component>

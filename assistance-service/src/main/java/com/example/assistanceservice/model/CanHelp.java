@@ -19,6 +19,7 @@ public class CanHelp {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String type;
     private String organization;
     private String username;
     private String firstName;
@@ -31,6 +32,7 @@ public class CanHelp {
 
     public void update(CanHelpDto canHelpDto) {
         this.organization = canHelpDto.getOrganization();
+        this.type = "canHelp";
         this.username = canHelpDto.getUsername();
         this.firstName = canHelpDto.getFirstName();
         this.lastName = canHelpDto.getLastName();

@@ -2,11 +2,13 @@ package com.example.assistanceservice.controller;
 
 import com.example.assistanceservice.dto.CanHelpDto;
 import com.example.assistanceservice.dto.NeedHelpDto;
+import com.example.assistanceservice.dto.ReviewDto;
 import com.example.assistanceservice.model.CanHelp;
 import com.example.assistanceservice.model.NeedHelp;
 import com.example.assistanceservice.payload.response.MessageResponse;
 import com.example.assistanceservice.service.ICanHelpService;
 import com.example.assistanceservice.service.INeedHelpService;
+import com.example.assistanceservice.service.IReviewService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +21,7 @@ import java.util.List;
 public class HelpController {
     private final ICanHelpService canHelpService;
     private final INeedHelpService needHelpService;
+    private final IReviewService reviewService;
 
     @GetMapping("/getAllCanHelp/{username}")
     public List<CanHelp> getAllCanHelp(@PathVariable String username) {
@@ -52,5 +55,11 @@ public class HelpController {
     public ResponseEntity<MessageResponse> deleteNeedHelp(@PathVariable Long id) {
         needHelpService.deleteById(id);
         return ResponseEntity.ok(new MessageResponse("NeedHelp: " + id + " deleted successfully"));
+    }
+
+    @PostMapping("/createReview")
+    public ResponseEntity<MessageResponse> createReview(@RequestBody ReviewDto reviewDto) {
+        reviewService.createReview(reviewDto);
+        return ResponseEntity.ok(new MessageResponse("Review: " + reviewDto.getRating() + " created successfully"));
     }
 }

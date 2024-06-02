@@ -19,6 +19,7 @@ public class NeedHelp {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String type;
     private String organization;
     private String username;
     private String fullName;
@@ -28,6 +29,7 @@ public class NeedHelp {
     private LocalDateTime createdAt;
 
     public void update(NeedHelpDto needHelpDto) {
+        this.type = "needHelp";
         this.organization = needHelpDto.getOrganization();
         this.username = needHelpDto.getUsername();
         this.fullName = needHelpDto.getFullName();

@@ -35,7 +35,7 @@ public class EmailServiceImpl implements IEmailService {
             helper.setText(htmlContent, true);
             helper.setTo(verification.getEmail());
             helper.setSubject("Подтвердите свою электронную почту");
-            helper.setFrom("prime@meikuv.xyz");
+            helper.setFrom("noreply-qamqorbol@meikuv.xyz");
             mailSender.send(mimeMessage);
         } catch (MessagingException | IOException e) {
             LOGGER.error("failed to send email: ", e);

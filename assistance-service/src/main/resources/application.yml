@@ -3,10 +3,3 @@ spring:
     name: assistance-service
   config:
     import: optional:configserver:http://localhost:8888
-aws:
-  access:
-    key: ${AWS_ACCESS_KEY:AKIAYS2NWIUJHSNDY574}
-  secret:
-    key: ${AWS_SECRET_KEY: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}
-  s3:
-    bucket: ${AWS_S3_BUCKET:social-assistance-bucket}
